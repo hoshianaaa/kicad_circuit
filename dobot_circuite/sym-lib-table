@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name dobot_circuite-rescue)(type Legacy)(uri ${KIPRJMOD}/dobot_circuite-rescue.lib)(options "")(descr ""))
+)
