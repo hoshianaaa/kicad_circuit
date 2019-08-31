@@ -1,4 +1,4 @@
-16332359588981418
+16357436063571025
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72891,6 +72891,34 @@ varistor SIOV
 2
 2
 hoshina_library
+2SD1781
+
+
+0
+3
+3
+hoshina_library
+2pin_power_gnd
+
+
+0
+2
+2
+hoshina_library
+ALQ105_akituki
+Relay SPST Schrack-RP-II/1 RM3.5mm 8A 250V AC Form C http://image.schrack.com/datenblaetter/h_rp810012-b.pdf
+Relay SPST Schrack-RP-II/1 RM3.5mm 8A 250V AC Relay
+0
+5
+5
+hoshina_library
+Arduino_UNO_R3
+Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
+Arduino UNO R3
+0
+32
+32
+hoshina_library
 CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder
 Tantalum Capacitor SMD Kemet-R (2012-12 Metric), IPC_7351 nominal, (Body size from: https://www.vishay.com/docs/40182/tmch.pdf), generated with kicad-footprint-generator
 capacitor tantalum
@@ -72938,7 +72966,7 @@ HDMI_2000-1-1-20-00-BK
 
 0
 23
-20
+19
 hoshina_library
 HDMI_Hole
 
@@ -72968,6 +72996,13 @@ Hole_3.3mm
 0
 0
 hoshina_library
+LED_1608
+LED SMD 0603 (1608 Metric), castellated end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+LED castellated
+0
+2
+2
+hoshina_library
 S2B-XH-A
 
 
@@ -72982,6 +73017,13 @@ S2B-XH-A_DCJ
 2
 2
 hoshina_library
+SW_TH_Tactile_Omron_B3F-10xx
+SW_TH_Tactile_Omron_B3F-10xx_https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+Omron B3F-10xx
+0
+4
+4
+hoshina_library
 Thinker_board
 
 
@@ -72994,6 +73036,27 @@ aitendo USB-A1
 USB_A Female Connector receptacle
 0
 6
+5
+hoshina_library
+USB-A1_+hole
+aitendo USB-A1
+USB_A Female Connector receptacle
+0
+6
+5
+hoshina_library
+USB_Micro-B_MC5F-03_aitendo
+GCT Micro USB https://gct.co/files/drawings/usb3076.pdf
+Micro-USB SMD Typ-B GCT
+0
+11
+5
+hoshina_library
+USB_Micro-B_MC5F-03_aitendo_reverse
+GCT Micro USB https://gct.co/files/drawings/usb3076.pdf
+Micro-USB SMD Typ-B GCT
+0
+11
 5
 hoshina_library
 XH4PIN
@@ -73011,11 +73074,39 @@ XH4PIN_S
 4
 hoshina_library
 arduino_leonard
+Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
+Arduino UNO R3
+0
+30
+28
+hoshina_library
+arduino_leonard_remove_2pin
+Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
+Arduino UNO R3
+0
+30
+28
+hoshina_library
+carbon_register
 
 
 0
+2
+2
+hoshina_library
+diode_GS1010FL
+
+
 0
+2
+2
+hoshina_library
+fhoto_capra_PS817
+
+
 0
+4
+4
 hoshina_library
 register_0603
 aitendo_R0603-1
@@ -73023,6 +73114,27 @@ capacitor
 0
 2
 2
+hoshina_library
+terminal_block_2pin_small
+
+
+0
+2
+2
+hoshina_library
+terminal_block_4pin_small
+
+
+0
+4
+4
+hoshina_library
+terminal_block_6pin_small
+
+
+0
+6
+6
 hoshina_library
 test
 

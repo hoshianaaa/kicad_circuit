@@ -96,6 +96,29 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -110,6 +133,47 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push_Dual
+#
+DEF Switch_SW_Push_Dual SW 0 40 Y N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push_Dual" 0 -270 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 -200 20 0 1 0 N
+C -80 0 20 0 1 0 N
+C 80 -200 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 -120 0 -140 N
+P 2 0 1 0 0 -80 0 -100 N
+P 2 0 1 0 0 -60 0 -40 N
+P 2 0 1 0 0 -20 0 0 N
+P 2 0 1 0 0 20 0 40 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 -150 -100 -150 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+X 3 3 -200 -200 100 R 50 50 0 1 P
+X 4 4 200 -200 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# dobot_circuite-cache_hoshina_library_terminal_block_2pin_small
+#
+DEF dobot_circuite-cache_hoshina_library_terminal_block_2pin_small U 0 40 Y Y 1 F N
+F0 "U" 50 -250 50 H V C CNN
+F1 "dobot_circuite-cache_hoshina_library_terminal_block_2pin_small" 50 -250 50 H V C CNN
+F2 "" 50 -250 50 H I C CNN
+F3 "" 50 -250 50 H I C CNN
+DRAW
+S 100 50 200 250 0 1 0 N
+X ~ 1 0 200 100 R 50 50 1 1 O
+X ~ 2 0 100 100 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
@@ -154,18 +218,103 @@ X XOUT XOUT -450 1250 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dobot_circuite-rescue_usb_connector-dobot_circuite-cache-dobot_circuite-rescue
+# hoshina_library_2SD1781K
 #
-DEF dobot_circuite-rescue_usb_connector-dobot_circuite-cache-dobot_circuite-rescue U 0 40 Y Y 1 F N
-F0 "U" 0 -100 50 H V C CNN
-F1 "dobot_circuite-rescue_usb_connector-dobot_circuite-cache-dobot_circuite-rescue" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF hoshina_library_2SD1781K T 0 40 Y Y 1 F N
+F0 "T" 0 250 50 H V C CNN
+F1 "hoshina_library_2SD1781K" 0 -250 50 H V C CNN
+F2 "" 0 250 50 H I C CNN
+F3 "" 0 250 50 H I C CNN
 DRAW
-X DM DM -100 200 100 R 50 50 1 1 I
-X DP DP -100 300 100 R 50 50 1 1 I
-X GND GND -100 100 100 R 50 50 1 1 I
-X VCC VCC -100 400 100 R 50 50 1 1 I
+S -50 100 -50 -100 0 1 0 N
+P 2 0 1 0 -50 0 -150 0 N
+P 3 0 1 0 -50 -50 50 -100 50 -200 N
+P 3 0 1 0 -50 50 50 100 50 200 N
+P 4 0 1 0 -10 -90 10 -50 30 -90 -10 -90 N
+X ~ B -150 0 100 R 50 50 1 1 P
+X ~ C 50 200 100 D 50 50 1 1 P
+X ~ E 50 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# hoshina_library_ALQ105
+#
+DEF hoshina_library_ALQ105 K 0 40 Y Y 1 F N
+F0 "K" 450 150 50 H V L CNN
+F1 "hoshina_library_ALQ105" 450 50 50 H V L CNN
+F2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" 600 -600 50 H I L CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Relay*StandexMeder*DIP*LowProfile*
+$ENDFPLIST
+DRAW
+S -400 200 400 -200 0 1 10 f
+S -325 75 -75 -75 0 1 10 N
+P 2 0 0 0 100 150 100 200 N
+P 2 0 0 0 300 150 300 200 N
+P 4 0 0 0 300 150 300 100 275 125 300 150 N
+P 2 0 1 10 -300 -75 -100 75 N
+P 2 0 1 0 -200 -200 -200 -75 N
+P 2 0 1 0 -200 200 -200 75 N
+P 2 0 1 10 -75 0 -50 0 N
+P 2 0 1 10 -25 0 0 0 N
+P 2 0 1 10 25 0 50 0 N
+P 2 0 1 10 25 0 50 0 N
+P 2 0 1 10 75 0 100 0 N
+P 2 0 1 10 125 0 150 0 N
+P 2 0 1 20 200 -100 125 150 N
+P 2 0 1 0 200 -100 200 -200 N
+P 3 0 1 0 100 100 125 125 100 150 F
+X ~ C1 -200 300 100 D 50 50 1 1 P
+X ~ C2 -200 -300 100 U 50 50 1 1 P
+X ~ COM 200 -300 100 U 50 50 1 1 P
+X ~ NC 100 300 100 D 50 50 1 1 P
+X ~ NO 300 300 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# hoshina_library_Arduino_Leonardo_pin_remove_2pin
+#
+DEF hoshina_library_Arduino_Leonardo_pin_remove_2pin A 0 20 Y Y 1 F N
+F0 "A" -200 1050 50 H V R CNN
+F1 "hoshina_library_Arduino_Leonardo_pin_remove_2pin" -200 950 50 H V R CNN
+F2 "Module:Arduino_UNO_R3" 150 -1050 50 H I L CNN
+F3 "" -200 1050 50 H I C CNN
+$FPLIST
+ Arduino*UNO*R3*
+$ENDFPLIST
+DRAW
+S -400 900 400 -1000 0 1 10 f
+X +5V +5V 200 1000 100 D 50 50 1 1 w
+X 3V3 3V3 100 1000 100 D 50 50 1 1 w
+X A0 A0 500 0 100 L 50 50 1 1 B
+X A1 A1 500 -100 100 L 50 50 1 1 B
+X A2 A2 500 -200 100 L 50 50 1 1 B
+X A3 A3 500 -300 100 L 50 50 1 1 B
+X A4 A4 500 -400 100 L 50 50 1 1 B
+X A5 A5 500 -500 100 L 50 50 1 1 B
+X AREF AREF 500 200 100 L 50 50 1 1 I
+X D0/RX D0/RX -500 600 100 R 50 50 1 1 B
+X D1/TX D1/TX -500 500 100 R 50 50 1 1 B
+X D10 D10 -500 -400 100 R 50 50 1 1 B
+X D11 D11 -500 -500 100 R 50 50 1 1 B
+X D12 D12 -500 -600 100 R 50 50 1 1 B
+X D13 D13 -500 -700 100 R 50 50 1 1 B
+X D2/SDA D2/SDA -500 400 100 R 50 50 1 1 B
+X D3/SCL D3/SCL -500 300 100 R 50 50 1 1 B
+X D4 D4 -500 200 100 R 50 50 1 1 B
+X D5 D5 -500 100 100 R 50 50 1 1 B
+X D6 D6 -500 0 100 R 50 50 1 1 B
+X D7 D7 -500 -100 100 R 50 50 1 1 B
+X D8 D8 -500 -200 100 R 50 50 1 1 B
+X D9 D9 -500 -300 100 R 50 50 1 1 B
+X GND GND -100 -1100 100 U 50 50 1 1 W
+X GND GND 0 -1100 100 U 50 50 1 1 W
+X GND GND 100 -1100 100 U 50 50 1 1 W
+X RESET RESET 500 600 100 L 50 50 1 1 I
+X SCL SCL 500 -800 100 L 50 50 1 1 B
+X SDA SDA 500 -700 100 L 50 50 1 1 B
+X VIN VIN -100 1000 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -210,21 +359,6 @@ X SH SH 300 -1100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hoshina_library_HDMI_Hole
-#
-DEF hoshina_library_HDMI_Hole U 0 40 Y Y 1 F N
-F0 "U" 0 150 50 H V C CNN
-F1 "hoshina_library_HDMI_Hole" 50 -50 50 H V C CNN
-F2 "" 50 -50 50 H I C CNN
-F3 "" 50 -50 50 H I C CNN
-DRAW
-S -100 0 -100 100 0 1 0 N
-S -100 0 100 0 0 1 0 N
-S 100 100 -100 100 0 1 0 N
-S 100 100 100 0 0 1 0 N
-ENDDRAW
-ENDDEF
-#
 # hoshina_library_HDMI_Hole2
 #
 DEF hoshina_library_HDMI_Hole2 U 0 40 Y Y 1 F N
@@ -252,6 +386,29 @@ S 50 -50 50 50 0 1 0 N
 ENDDRAW
 ENDDEF
 #
+# hoshina_library_LED
+#
+DEF hoshina_library_LED led 0 40 N N 1 F N
+F0 "led" 0 100 50 H V C CNN
+F1 "hoshina_library_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # hoshina_library_Thinker_board
 #
 DEF hoshina_library_Thinker_board Thinker_board 0 40 Y Y 1 F N
@@ -264,28 +421,108 @@ S -250 100 250 450 0 1 0 N
 ENDDRAW
 ENDDEF
 #
-# hoshina_library_XH_DCJ
+# hoshina_library_diode_GS1010FL
 #
-DEF hoshina_library_XH_DCJ U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H V C CNN
-F1 "hoshina_library_XH_DCJ" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-X GND GND 100 100 100 L 50 50 0 0 I
-X VCC VCC 100 200 100 L 50 50 0 0 I
-ENDDRAW
-ENDDEF
-#
-# hoshina_library_arduino_leonard
-#
-DEF hoshina_library_arduino_leonard U 0 40 Y Y 1 F N
+DEF hoshina_library_diode_GS1010FL U 0 40 Y Y 1 F N
 F0 "U" 0 -150 50 H V C CNN
-F1 "hoshina_library_arduino_leonard" 0 -150 50 H V C CNN
+F1 "hoshina_library_diode_GS1010FL" 0 -150 50 H V C CNN
 F2 "" 0 -150 50 H I C CNN
 F3 "" 0 -150 50 H I C CNN
 DRAW
-S 0 0 200 150 0 1 0 N
+S -50 0 50 0 0 1 0 N
+P 2 0 1 0 -20 15 -20 -15 N
+P 5 0 1 0 -20 0 10 20 10 -15 10 -20 -20 0 N
+X ~ 1 -150 0 100 R 50 50 1 1 I
+X ~ 2 150 0 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# hoshina_library_fhoto_capura_PS817
+#
+DEF hoshina_library_fhoto_capura_PS817 U 0 40 Y Y 1 F N
+F0 "U" -50 -300 50 H V C CNN
+F1 "hoshina_library_fhoto_capura_PS817" -50 -300 50 H V C CNN
+F2 "" -50 -300 50 H I C CNN
+F3 "" -50 -300 50 H I C CNN
+DRAW
+S -250 650 300 300 0 1 0 N
+S -150 550 -50 550 0 1 0 N
+P 2 0 1 0 -150 400 200 400 N
+P 2 0 1 0 -50 500 100 500 N
+P 2 0 1 0 -50 550 0 500 N
+P 2 0 1 0 100 450 100 350 N
+P 2 0 1 0 100 550 50 500 N
+P 2 0 1 0 100 550 200 550 N
+P 3 0 1 0 80 550 100 550 100 530 N
+P 4 0 1 0 0 450 0 350 100 400 0 450 N
+X ~ 1 -150 300 100 U 50 50 1 1 O
+X ~ 2 200 300 100 U 50 50 1 1 O
+X ~ 3 200 650 100 D 50 50 1 1 O
+X ~ 4 -150 650 100 D 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# hoshina_library_microB_usb_connector
+#
+DEF hoshina_library_microB_usb_connector U 0 40 Y Y 1 F N
+F0 "U" 0 -250 50 H V C CNN
+F1 "hoshina_library_microB_usb_connector" 0 -250 50 H V C CNN
+F2 "" 0 -250 50 H I C CNN
+F3 "" 0 -250 50 H I C CNN
+DRAW
+S 100 250 350 -150 0 1 0 N
+X ~ 5V 0 200 100 R 50 50 1 1 I
+X ~ D+ 0 100 100 R 50 50 1 1 I
+X ~ D- 0 0 100 R 50 50 1 1 I
+X ~ GND 0 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# hoshina_library_terminal_block_2pin_small
+#
+DEF hoshina_library_terminal_block_2pin_small U 0 40 Y Y 1 F N
+F0 "U" 50 -250 50 H V C CNN
+F1 "hoshina_library_terminal_block_2pin_small" 50 -250 50 H V C CNN
+F2 "" 50 -250 50 H I C CNN
+F3 "" 50 -250 50 H I C CNN
+DRAW
+S 100 50 200 250 0 1 0 N
+X ~ 1 0 200 100 R 50 50 1 1 O
+X ~ 2 0 100 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# hoshina_library_terminal_block_4pin_small
+#
+DEF hoshina_library_terminal_block_4pin_small U 0 40 Y Y 1 F N
+F0 "U" 0 -150 50 H V C CNN
+F1 "hoshina_library_terminal_block_4pin_small" 0 -150 50 H V C CNN
+F2 "" 0 -150 50 H I C CNN
+F3 "" 0 -150 50 H I C CNN
+DRAW
+S -100 300 0 -100 0 1 0 N
+X ~ 1 100 250 100 L 50 50 1 1 O
+X ~ 2 100 150 100 L 50 50 1 1 O
+X ~ 3 100 50 100 L 50 50 1 1 O
+X ~ 4 100 -50 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# hoshina_library_terminal_block_6pin_small
+#
+DEF hoshina_library_terminal_block_6pin_small U 0 40 Y Y 1 F N
+F0 "U" 350 -450 50 H V C CNN
+F1 "hoshina_library_terminal_block_6pin_small" 350 -450 50 H V C CNN
+F2 "" 350 -450 50 H I C CNN
+F3 "" 350 -450 50 H I C CNN
+DRAW
+S 100 -200 250 450 0 1 0 N
+X ~ 1 0 350 100 R 50 50 1 1 O
+X ~ 2 0 250 100 R 50 50 1 1 O
+X ~ 3 0 150 100 R 50 50 1 1 O
+X ~ 4 0 50 100 R 50 50 1 1 O
+X ~ 5 0 -50 100 R 50 50 1 1 O
+X ~ 6 0 -150 100 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
@@ -301,6 +538,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +1V8 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+24V
+#
+DEF power_+24V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+24V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +24V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -345,6 +597,19 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDA
+#
+DEF power_GNDA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDA" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
