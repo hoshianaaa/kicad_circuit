@@ -1,4 +1,4 @@
-(module USB_Micro-B_MC5F-03_aitendo_reverse (layer F.Cu) (tedit 5D6A7820)
+(module USB_Micro-B_MC5F-03_aitendo_reverse (layer F.Cu) (tedit 5D6CF985)
   (descr "GCT Micro USB https://gct.co/files/drawings/usb3076.pdf")
   (tags "Micro-USB SMD Typ-B GCT")
   (attr smd)
@@ -44,7 +44,7 @@
   (pad D+ smd rect (at 0 3.05) (size 0.4 2.1) (layers B.Cu B.Paste B.Mask))
   (pad "" np_thru_hole circle (at 2 2.25) (size 0.7 0.7) (drill 0.6) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at -2 2.25) (size 0.7 0.7) (drill 0.6) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole oval (at 0 -12.954) (size 13 23) (drill oval 12 22) (layers *.Cu *.Mask))
+  (pad "" np_thru_hole oval (at 0 -17.78) (size 13 33) (drill oval 12 32) (layers *.Cu *.Mask))
   (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_Micro-B_GCT_USB3076-30-A.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))

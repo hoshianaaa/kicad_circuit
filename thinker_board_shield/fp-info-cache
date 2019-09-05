@@ -1,4 +1,4 @@
-16369981002683479
+16374682358895204
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72989,6 +72989,13 @@ hdmi micro type d right angle tht
 21
 2
 hoshina_library
+Hole_3.2mm
+
+
+0
+0
+0
+hoshina_library
 Hole_3.3mm
 
 
@@ -73037,6 +73044,13 @@ Thinker_board
 0
 0
 0
+hoshina_library
+Thinker_board_pin
+Raspberry Pi Zero using through hole straight pin socket, 2x20, 2.54mm pitch, https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p2.pdf
+raspberry pi zero through hole
+0
+40
+40
 hoshina_library
 USB-A1
 aitendo USB-A1
@@ -73193,6 +73207,13 @@ terminal_block_6pin_small
 6
 hoshina_library
 test
+
+
+0
+0
+0
+project_footprints
+NPTH_3mm_ID
 
 
 0

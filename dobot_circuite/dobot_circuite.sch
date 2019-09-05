@@ -70,61 +70,22 @@ Wire Wire Line
 Wire Wire Line
 	2250 2500 1100 2500
 Wire Wire Line
-	1100 2600 2250 2600
-Wire Wire Line
-	2250 2800 1100 2800
-Wire Wire Line
-	1100 2900 2250 2900
-Wire Wire Line
 	1300 3300 1300 3450
-Wire Wire Line
-	1300 3450 2450 3450
-Wire Wire Line
-	2450 3450 2450 3300
 Wire Wire Line
 	1400 3300 1400 3500
 Wire Wire Line
-	1400 3500 2550 3500
-Wire Wire Line
-	2550 3500 2550 3300
-Wire Wire Line
-	1500 3300 1500 3550
-Wire Wire Line
-	1500 3550 2650 3550
-Wire Wire Line
-	2650 3550 2650 3300
-Wire Wire Line
-	1600 3300 1600 3600
-Wire Wire Line
-	1600 3600 2750 3600
-Wire Wire Line
 	2750 3600 2750 3300
-Wire Wire Line
-	1700 3300 1700 3650
-Wire Wire Line
-	1700 3650 2850 3650
 Wire Wire Line
 	2850 3650 2850 3300
 $Comp
-L power:GND #PWR0101
-U 1 1 5D5D37FA
-P 8500 5350
-F 0 "#PWR0101" H 8500 5100 50  0001 C CNN
-F 1 "GND" H 8505 5177 50  0000 C CNN
-F 2 "" H 8500 5350 50  0001 C CNN
-F 3 "" H 8500 5350 50  0001 C CNN
-	1    8500 5350
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+5V #PWR0102
 U 1 1 5D5D4380
-P 8500 5050
-F 0 "#PWR0102" H 8500 4900 50  0001 C CNN
-F 1 "+5V" V 8515 5178 50  0000 L CNN
-F 2 "" H 8500 5050 50  0001 C CNN
-F 3 "" H 8500 5050 50  0001 C CNN
-	1    8500 5050
+P 8500 4950
+F 0 "#PWR0102" H 8500 4800 50  0001 C CNN
+F 1 "+5V" V 8515 5078 50  0000 L CNN
+F 2 "" H 8500 4950 50  0001 C CNN
+F 3 "" H 8500 4950 50  0001 C CNN
+	1    8500 4950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -196,23 +157,23 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 5D63849E
-P 6200 5400
-F 0 "R1" V 5993 5400 50  0000 C CNN
-F 1 "R" V 6084 5400 50  0000 C CNN
-F 2 "hoshina_library:register_0603" V 6130 5400 50  0001 C CNN
-F 3 "~" H 6200 5400 50  0001 C CNN
-	1    6200 5400
+P 6200 6050
+F 0 "R1" V 5993 6050 50  0000 C CNN
+F 1 "2.7k_chip" V 6084 6050 50  0000 C CNN
+F 2 "hoshina_library:register_0603" V 6130 6050 50  0001 C CNN
+F 3 "~" H 6200 6050 50  0001 C CNN
+	1    6200 6050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0117
 U 1 1 5D6384A8
-P 6200 5550
-F 0 "#PWR0117" H 6200 5300 50  0001 C CNN
-F 1 "GND" H 6205 5377 50  0000 C CNN
-F 2 "" H 6200 5550 50  0001 C CNN
-F 3 "" H 6200 5550 50  0001 C CNN
-	1    6200 5550
+P 6200 6200
+F 0 "#PWR0117" H 6200 5950 50  0001 C CNN
+F 1 "GND" H 6205 6027 50  0000 C CNN
+F 2 "" H 6200 6200 50  0001 C CNN
+F 3 "" H 6200 6200 50  0001 C CNN
+	1    6200 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -475,7 +436,7 @@ U 1 1 5D62FD50
 P 4200 2750
 F 0 "C2" H 4315 2796 50  0000 L CNN
 F 1 "10uF" H 4315 2705 50  0000 L CNN
-F 2 "hoshina_library:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 4238 2600 50  0001 C CNN
+F 2 "hoshina_library:capa1608" H 4238 2600 50  0001 C CNN
 F 3 "~" H 4200 2750 50  0001 C CNN
 	1    4200 2750
 	1    0    0    -1  
@@ -577,7 +538,7 @@ U 1 1 5D6384C7
 P 7900 4800
 F 0 "C1" H 8015 4846 50  0000 L CNN
 F 1 "10uF" H 8015 4755 50  0000 L CNN
-F 2 "hoshina_library:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 7938 4650 50  0001 C CNN
+F 2 "hoshina_library:capa1608" H 7938 4650 50  0001 C CNN
 F 3 "~" H 7900 4800 50  0001 C CNN
 	1    7900 4800
 	1    0    0    -1  
@@ -599,7 +560,7 @@ U 1 1 5D683449
 P 5900 5200
 F 0 "C3" H 6015 5246 50  0000 L CNN
 F 1 "10uF" H 6015 5155 50  0000 L CNN
-F 2 "hoshina_library:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 5938 5050 50  0001 C CNN
+F 2 "hoshina_library:capa1608" H 5938 5050 50  0001 C CNN
 F 3 "~" H 5900 5200 50  0001 C CNN
 	1    5900 5200
 	1    0    0    -1  
@@ -609,20 +570,9 @@ Wire Wire Line
 	6100 5150 6200 5150
 Wire Wire Line
 	6100 5750 7600 5750
-$Comp
-L hoshina_library:HDMI_Hole2 U7
-U 1 1 5D6FC762
-P 5950 1600
-F 0 "U7" H 6228 1746 50  0000 L CNN
-F 1 "HDMI_Hole2" H 6228 1655 50  0000 L CNN
-F 2 "hoshina_library:HDMI_Hole2" H 6100 1500 50  0001 C CNN
-F 3 "" H 6100 1500 50  0001 C CNN
-	1    5950 1600
-	1    0    0    -1  
-$EndComp
 Text GLabel -3250 2750 0    50   Input ~ 0
 D13
-Text GLabel -8950 1100 0    50   Input ~ 0
+Text GLabel -9050 1100 0    50   Input ~ 0
 D11
 $Comp
 L power:GNDA #PWR0129
@@ -662,22 +612,11 @@ L Device:R R3
 U 1 1 5D73A017
 P -8800 1100
 F 0 "R3" V -9007 1100 50  0000 C CNN
-F 1 "5k" V -8916 1100 50  0000 C CNN
+F 1 "5.1k/0.005W" V -8916 1100 50  0000 C CNN
 F 2 "hoshina_library:register_0603" V -8870 1100 50  0001 C CNN
 F 3 "~" H -8800 1100 50  0001 C CNN
 	1    -8800 1100
 	0    1    1    0   
-$EndComp
-$Comp
-L hoshina_library:2SD1781K T1
-U 1 1 5D734192
-P -8500 1100
-F 0 "T1" H -8406 1146 50  0000 L CNN
-F 1 "2SD1781K" H -8406 1055 50  0000 L CNN
-F 2 "hoshina_library:2SD1781" H -8500 1350 50  0001 C CNN
-F 3 "" H -8500 1350 50  0001 C CNN
-	1    -8500 1100
-	1    0    0    -1  
 $EndComp
 $Comp
 L hoshina_library:ALQ105 K1
@@ -739,22 +678,11 @@ L Device:R R4
 U 1 1 5D77886C
 P -8800 2950
 F 0 "R4" V -9007 2950 50  0000 C CNN
-F 1 "5k" V -8916 2950 50  0000 C CNN
+F 1 "5.1k/0.005W" V -8916 2950 50  0000 C CNN
 F 2 "hoshina_library:register_0603" V -8870 2950 50  0001 C CNN
 F 3 "~" H -8800 2950 50  0001 C CNN
 	1    -8800 2950
 	0    1    1    0   
-$EndComp
-$Comp
-L hoshina_library:2SD1781K T2
-U 1 1 5D778876
-P -8500 2950
-F 0 "T2" H -8406 2996 50  0000 L CNN
-F 1 "2SD1781K" H -8406 2905 50  0000 L CNN
-F 2 "hoshina_library:2SD1781" H -8500 3200 50  0001 C CNN
-F 3 "" H -8500 3200 50  0001 C CNN
-	1    -8500 2950
-	1    0    0    -1  
 $EndComp
 $Comp
 L hoshina_library:ALQ105 K2
@@ -767,7 +695,7 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    -8250 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel -8950 4700 0    50   Input ~ 0
+Text GLabel -9050 4700 0    50   Input ~ 0
 D13
 $Comp
 L power:+24V #PWR0136
@@ -818,22 +746,11 @@ L Device:R R5
 U 1 1 5D780D03
 P -8800 4700
 F 0 "R5" V -9007 4700 50  0000 C CNN
-F 1 "5k" V -8916 4700 50  0000 C CNN
+F 1 "5.1k/0.005W" V -8916 4700 50  0000 C CNN
 F 2 "hoshina_library:register_0603" V -8870 4700 50  0001 C CNN
 F 3 "~" H -8800 4700 50  0001 C CNN
 	1    -8800 4700
 	0    1    1    0   
-$EndComp
-$Comp
-L hoshina_library:2SD1781K T3
-U 1 1 5D780D0D
-P -8500 4700
-F 0 "T3" H -8406 4746 50  0000 L CNN
-F 1 "2SD1781K" H -8406 4655 50  0000 L CNN
-F 2 "hoshina_library:2SD1781" H -8500 4950 50  0001 C CNN
-F 3 "" H -8500 4950 50  0001 C CNN
-	1    -8500 4700
-	1    0    0    -1  
 $EndComp
 $Comp
 L hoshina_library:ALQ105 K3
@@ -846,7 +763,7 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    -8250 4050
 	1    0    0    -1  
 $EndComp
-Text GLabel -8950 2950 0    50   Input ~ 0
+Text GLabel -9050 2950 0    50   Input ~ 0
 D12
 Text GLabel -3250 2650 0    50   Input ~ 0
 D12
@@ -972,28 +889,6 @@ F 3 "" H 800 -4150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R6
-U 1 1 5D875378
-P -1100 -1650
-F 0 "R6" H -1030 -1604 50  0000 L CNN
-F 1 "190" H -1030 -1695 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -1170 -1650 50  0001 C CNN
-F 3 "~" H -1100 -1650 50  0001 C CNN
-	1    -1100 -1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5D876210
-P -750 -2300
-F 0 "R7" H -680 -2254 50  0000 L CNN
-F 1 "10k" H -680 -2345 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -820 -2300 50  0001 C CNN
-F 3 "~" H -750 -2300 50  0001 C CNN
-	1    -750 -2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0145
 U 1 1 5D8778ED
 P -750 -1800
@@ -1003,17 +898,6 @@ F 2 "" H -750 -1800 50  0001 C CNN
 F 3 "" H -750 -1800 50  0001 C CNN
 	1    -750 -1800
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0146
-U 1 1 5D877CA1
-P -750 -2450
-F 0 "#PWR0146" H -750 -2700 50  0001 C CNN
-F 1 "GNDA" H -745 -2623 50  0000 C CNN
-F 2 "" H -750 -2450 50  0001 C CNN
-F 3 "" H -750 -2450 50  0001 C CNN
-	1    -750 -2450
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:+24V #PWR0147
@@ -1026,15 +910,12 @@ F 3 "" H -1100 -2150 50  0001 C CNN
 	1    -1100 -2150
 	1    0    0    -1  
 $EndComp
-Text GLabel -1100 -1500 3    50   Input ~ 0
-D10
 Text GLabel -350 -2200 2    50   Input ~ 0
 D10_24V
 Wire Wire Line
 	-750 -2150 -350 -2150
 Wire Wire Line
 	-350 -2150 -350 -2200
-Connection ~ -750 -2150
 Text GLabel 700  -3750 0    50   Input ~ 0
 D10_24V
 $Comp
@@ -1046,28 +927,6 @@ F 1 "fhoto_capura_PS817" H -622 -2470 50  0000 L CNN
 F 2 "hoshina_library:fhoto_capra_PS817" H -1000 -3200 50  0001 C CNN
 F 3 "" H -1000 -3200 50  0001 C CNN
 	1    -950 -2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R20
-U 1 1 5D8B9A59
-P -1100 -3050
-F 0 "R20" H -1030 -3004 50  0000 L CNN
-F 1 "190" H -1030 -3095 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -1170 -3050 50  0001 C CNN
-F 3 "~" H -1100 -3050 50  0001 C CNN
-	1    -1100 -3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 5D8B9A63
-P -750 -3700
-F 0 "R21" H -680 -3654 50  0000 L CNN
-F 1 "10k" H -680 -3745 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -820 -3700 50  0001 C CNN
-F 3 "~" H -750 -3700 50  0001 C CNN
-	1    -750 -3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1084,13 +943,13 @@ $EndComp
 $Comp
 L power:GNDA #PWR0149
 U 1 1 5D8B9A77
-P -750 -3850
-F 0 "#PWR0149" H -750 -4100 50  0001 C CNN
-F 1 "GNDA" H -745 -4023 50  0000 C CNN
-F 2 "" H -750 -3850 50  0001 C CNN
-F 3 "" H -750 -3850 50  0001 C CNN
-	1    -750 -3850
-	-1   0    0    1   
+P 650 -2950
+F 0 "#PWR0149" H 650 -3200 50  0001 C CNN
+F 1 "GNDA" H 655 -3123 50  0000 C CNN
+F 2 "" H 650 -2950 50  0001 C CNN
+F 3 "" H 650 -2950 50  0001 C CNN
+	1    650  -2950
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+24V #PWR0150
@@ -1103,15 +962,12 @@ F 3 "" H -1100 -3550 50  0001 C CNN
 	1    -1100 -3550
 	1    0    0    -1  
 $EndComp
-Text GLabel -1100 -2900 3    50   Input ~ 0
-D8
 Text GLabel -350 -3600 2    50   Input ~ 0
 D8_24V
 Wire Wire Line
 	-750 -3550 -350 -3550
 Wire Wire Line
 	-350 -3550 -350 -3600
-Connection ~ -750 -3550
 $Comp
 L hoshina_library:fhoto_capura_PS817 U18
 U 1 1 5D8C0D85
@@ -1121,28 +977,6 @@ F 1 "fhoto_capura_PS817" H -2072 -1070 50  0000 L CNN
 F 2 "hoshina_library:fhoto_capra_PS817" H -2450 -1800 50  0001 C CNN
 F 3 "" H -2450 -1800 50  0001 C CNN
 	1    -2400 -1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R17
-U 1 1 5D8C0D8F
-P -2550 -1650
-F 0 "R17" H -2480 -1604 50  0000 L CNN
-F 1 "190" H -2480 -1695 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -2620 -1650 50  0001 C CNN
-F 3 "~" H -2550 -1650 50  0001 C CNN
-	1    -2550 -1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R19
-U 1 1 5D8C0D99
-P -2200 -2300
-F 0 "R19" H -2130 -2254 50  0000 L CNN
-F 1 "10k" H -2130 -2345 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -2270 -2300 50  0001 C CNN
-F 3 "~" H -2200 -2300 50  0001 C CNN
-	1    -2200 -2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1157,17 +991,6 @@ F 3 "" H -2200 -1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0152
-U 1 1 5D8C0DAD
-P -2200 -2450
-F 0 "#PWR0152" H -2200 -2700 50  0001 C CNN
-F 1 "GNDA" H -2195 -2623 50  0000 C CNN
-F 2 "" H -2200 -2450 50  0001 C CNN
-F 3 "" H -2200 -2450 50  0001 C CNN
-	1    -2200 -2450
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+24V #PWR0153
 U 1 1 5D8C0DB7
 P -2550 -2150
@@ -1178,15 +1001,12 @@ F 3 "" H -2550 -2150 50  0001 C CNN
 	1    -2550 -2150
 	1    0    0    -1  
 $EndComp
-Text GLabel -2550 -1500 3    50   Input ~ 0
-D9
 Text GLabel -1800 -2200 2    50   Input ~ 0
 D9_24V
 Wire Wire Line
 	-2200 -2150 -1800 -2150
 Wire Wire Line
 	-1800 -2150 -1800 -2200
-Connection ~ -2200 -2150
 $Comp
 L hoshina_library:fhoto_capura_PS817 U17
 U 1 1 5D8C793C
@@ -1201,23 +1021,12 @@ $EndComp
 $Comp
 L Device:R R16
 U 1 1 5D8C7946
-P -2550 -3050
-F 0 "R16" H -2480 -3004 50  0000 L CNN
-F 1 "190" H -2480 -3095 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -2620 -3050 50  0001 C CNN
-F 3 "~" H -2550 -3050 50  0001 C CNN
-	1    -2550 -3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R18
-U 1 1 5D8C7950
-P -2200 -3700
-F 0 "R18" H -2130 -3654 50  0000 L CNN
-F 1 "10k" H -2130 -3745 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -2270 -3700 50  0001 C CNN
-F 3 "~" H -2200 -3700 50  0001 C CNN
-	1    -2200 -3700
+P -2550 -2950
+F 0 "R16" H -2480 -2904 50  0000 L CNN
+F 1 "200/0.06W_chip" H -2480 -2995 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -2620 -2950 50  0001 C CNN
+F 3 "~" H -2550 -2950 50  0001 C CNN
+	1    -2550 -2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1232,17 +1041,6 @@ F 3 "" H -2200 -3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0155
-U 1 1 5D8C7964
-P -2200 -3850
-F 0 "#PWR0155" H -2200 -4100 50  0001 C CNN
-F 1 "GNDA" H -2195 -4023 50  0000 C CNN
-F 2 "" H -2200 -3850 50  0001 C CNN
-F 3 "" H -2200 -3850 50  0001 C CNN
-	1    -2200 -3850
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+24V #PWR0156
 U 1 1 5D8C796E
 P -2550 -3550
@@ -1253,7 +1051,7 @@ F 3 "" H -2550 -3550 50  0001 C CNN
 	1    -2550 -3550
 	1    0    0    -1  
 $EndComp
-Text GLabel -2550 -2900 3    50   Input ~ 0
+Text GLabel -2550 -2700 3    50   Input ~ 0
 D7
 Text GLabel -1800 -3600 2    50   Input ~ 0
 D7_24V
@@ -1261,7 +1059,6 @@ Wire Wire Line
 	-2200 -3550 -1800 -3550
 Wire Wire Line
 	-1800 -3550 -1800 -3600
-Connection ~ -2200 -3550
 Text GLabel 700  -3850 0    50   Input ~ 0
 D9_24V
 Text GLabel 700  -3950 0    50   Input ~ 0
@@ -1304,12 +1101,12 @@ $EndComp
 $Comp
 L Device:R R15
 U 1 1 5D8F37EA
-P -7150 -2100
-F 0 "R15" H -7080 -2054 50  0000 L CNN
-F 1 "10k" H -7080 -2145 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -7220 -2100 50  0001 C CNN
-F 3 "~" H -7150 -2100 50  0001 C CNN
-	1    -7150 -2100
+P -7150 -2400
+F 0 "R15" H -7080 -2354 50  0000 L CNN
+F 1 "10k/0.0025W" H -7080 -2445 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -7220 -2400 50  0001 C CNN
+F 3 "~" H -7150 -2400 50  0001 C CNN
+	1    -7150 -2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1326,12 +1123,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR0158
 U 1 1 5D8F37FE
-P -7150 -2250
-F 0 "#PWR0158" H -7150 -2500 50  0001 C CNN
-F 1 "GNDA" H -7145 -2423 50  0000 C CNN
-F 2 "" H -7150 -2250 50  0001 C CNN
-F 3 "" H -7150 -2250 50  0001 C CNN
-	1    -7150 -2250
+P -7150 -2550
+F 0 "#PWR0158" H -7150 -2800 50  0001 C CNN
+F 1 "GNDA" H -7145 -2723 50  0000 C CNN
+F 2 "" H -7150 -2550 50  0001 C CNN
+F 3 "" H -7150 -2550 50  0001 C CNN
+	1    -7150 -2550
 	-1   0    0    1   
 $EndComp
 Text GLabel -7500 -1300 3    50   Input ~ 0
@@ -1342,7 +1139,6 @@ Wire Wire Line
 	-7150 -1950 -6750 -1950
 Wire Wire Line
 	-6750 -1950 -6750 -2000
-Connection ~ -7150 -1950
 Text GLabel -5800 -3550 0    50   Input ~ 0
 D6_24V
 $Comp
@@ -1370,12 +1166,12 @@ $EndComp
 $Comp
 L Device:R R14
 U 1 1 5D8F382C
-P -7150 -3500
-F 0 "R14" H -7080 -3454 50  0000 L CNN
-F 1 "10k" H -7080 -3545 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -7220 -3500 50  0001 C CNN
-F 3 "~" H -7150 -3500 50  0001 C CNN
-	1    -7150 -3500
+P -7150 -3800
+F 0 "R14" H -7080 -3754 50  0000 L CNN
+F 1 "10k/0.0025W" H -7080 -3845 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -7220 -3800 50  0001 C CNN
+F 3 "~" H -7150 -3800 50  0001 C CNN
+	1    -7150 -3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1392,12 +1188,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR0161
 U 1 1 5D8F3840
-P -7150 -3650
-F 0 "#PWR0161" H -7150 -3900 50  0001 C CNN
-F 1 "GNDA" H -7145 -3823 50  0000 C CNN
-F 2 "" H -7150 -3650 50  0001 C CNN
-F 3 "" H -7150 -3650 50  0001 C CNN
-	1    -7150 -3650
+P -7150 -3950
+F 0 "#PWR0161" H -7150 -4200 50  0001 C CNN
+F 1 "GNDA" H -7145 -4123 50  0000 C CNN
+F 2 "" H -7150 -3950 50  0001 C CNN
+F 3 "" H -7150 -3950 50  0001 C CNN
+	1    -7150 -3950
 	-1   0    0    1   
 $EndComp
 Text GLabel -7500 -2700 3    50   Input ~ 0
@@ -1408,7 +1204,6 @@ Wire Wire Line
 	-7150 -3350 -6750 -3350
 Wire Wire Line
 	-6750 -3350 -6750 -3400
-Connection ~ -7150 -3350
 $Comp
 L hoshina_library:fhoto_capura_PS817 U13
 U 1 1 5D8F3859
@@ -1434,12 +1229,12 @@ $EndComp
 $Comp
 L Device:R R11
 U 1 1 5D8F386D
-P -8600 -2100
-F 0 "R11" H -8530 -2054 50  0000 L CNN
-F 1 "10k" H -8530 -2145 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -8670 -2100 50  0001 C CNN
-F 3 "~" H -8600 -2100 50  0001 C CNN
-	1    -8600 -2100
+P -8600 -2350
+F 0 "R11" H -8530 -2304 50  0000 L CNN
+F 1 "10k/0.0025W" H -8530 -2395 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -8670 -2350 50  0001 C CNN
+F 3 "~" H -8600 -2350 50  0001 C CNN
+	1    -8600 -2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1456,12 +1251,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR0164
 U 1 1 5D8F3881
-P -8600 -2250
-F 0 "#PWR0164" H -8600 -2500 50  0001 C CNN
-F 1 "GNDA" H -8595 -2423 50  0000 C CNN
-F 2 "" H -8600 -2250 50  0001 C CNN
-F 3 "" H -8600 -2250 50  0001 C CNN
-	1    -8600 -2250
+P -8600 -2500
+F 0 "#PWR0164" H -8600 -2750 50  0001 C CNN
+F 1 "GNDA" H -8595 -2673 50  0000 C CNN
+F 2 "" H -8600 -2500 50  0001 C CNN
+F 3 "" H -8600 -2500 50  0001 C CNN
+	1    -8600 -2500
 	-1   0    0    1   
 $EndComp
 Text GLabel -8950 -1300 3    50   Input ~ 0
@@ -1472,7 +1267,6 @@ Wire Wire Line
 	-8600 -1950 -8200 -1950
 Wire Wire Line
 	-8200 -1950 -8200 -2000
-Connection ~ -8600 -1950
 $Comp
 L hoshina_library:fhoto_capura_PS817 U12
 U 1 1 5D8F389A
@@ -1498,12 +1292,12 @@ $EndComp
 $Comp
 L Device:R R10
 U 1 1 5D8F38AE
-P -8600 -3500
-F 0 "R10" H -8530 -3454 50  0000 L CNN
-F 1 "10k" H -8530 -3545 50  0000 L CNN
-F 2 "hoshina_library:register_0603" V -8670 -3500 50  0001 C CNN
-F 3 "~" H -8600 -3500 50  0001 C CNN
-	1    -8600 -3500
+P -8600 -3800
+F 0 "R10" H -8530 -3754 50  0000 L CNN
+F 1 "10k/0.0025W" H -8530 -3845 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -8670 -3800 50  0001 C CNN
+F 3 "~" H -8600 -3800 50  0001 C CNN
+	1    -8600 -3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1520,12 +1314,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR0167
 U 1 1 5D8F38C2
-P -8600 -3650
-F 0 "#PWR0167" H -8600 -3900 50  0001 C CNN
-F 1 "GNDA" H -8595 -3823 50  0000 C CNN
-F 2 "" H -8600 -3650 50  0001 C CNN
-F 3 "" H -8600 -3650 50  0001 C CNN
-	1    -8600 -3650
+P -8600 -3950
+F 0 "#PWR0167" H -8600 -4200 50  0001 C CNN
+F 1 "GNDA" H -8595 -4123 50  0000 C CNN
+F 2 "" H -8600 -3950 50  0001 C CNN
+F 3 "" H -8600 -3950 50  0001 C CNN
+	1    -8600 -3950
 	-1   0    0    1   
 $EndComp
 Text GLabel -8950 -2700 3    50   Input ~ 0
@@ -1536,7 +1330,6 @@ Wire Wire Line
 	-8600 -3350 -8200 -3350
 Wire Wire Line
 	-8200 -3350 -8200 -3400
-Connection ~ -8600 -3350
 Text GLabel -5800 -3650 0    50   Input ~ 0
 D5_24V
 Text GLabel -5800 -3750 0    50   Input ~ 0
@@ -1697,7 +1490,7 @@ L Device:R R22
 U 1 1 5D863D55
 P -4250 350
 F 0 "R22" V -4457 350 50  0000 C CNN
-F 1 "R" V -4366 350 50  0000 C CNN
+F 1 "3.1k/1W" V -4366 350 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V -4320 350 50  0001 C CNN
 F 3 "~" H -4250 350 50  0001 C CNN
 	1    -4250 350 
@@ -1775,48 +1568,26 @@ Wire Wire Line
 Wire Wire Line
 	8500 5250 7050 5250
 $Comp
-L hoshina_library:microB_usb_connector U2
-U 1 1 5D74D692
-P 8500 5250
-F 0 "U2" H 8878 5351 50  0000 L CNN
-F 1 "microB_usb_connector" H 8878 5260 50  0000 L CNN
-F 2 "hoshina_library:USB_Micro-B_MC5F-03_aitendo_reverse" H 8500 5000 50  0001 C CNN
-F 3 "" H 8500 5000 50  0001 C CNN
-	1    8500 5250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 5D76124E
-P 9750 2500
-F 0 "#PWR0104" H 9750 2250 50  0001 C CNN
-F 1 "GND" H 9755 2327 50  0000 C CNN
-F 2 "" H 9750 2500 50  0001 C CNN
-F 3 "" H 9750 2500 50  0001 C CNN
-	1    9750 2500
-	0    1    1    0   
+P 10050 2700
+F 0 "#PWR0104" H 10050 2450 50  0001 C CNN
+F 1 "GND" H 10055 2527 50  0000 C CNN
+F 2 "" H 10050 2700 50  0001 C CNN
+F 3 "" H 10050 2700 50  0001 C CNN
+	1    10050 2700
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0105
 U 1 1 5D761258
-P 9750 2200
-F 0 "#PWR0105" H 9750 2050 50  0001 C CNN
-F 1 "+5V" V 9765 2328 50  0000 L CNN
-F 2 "" H 9750 2200 50  0001 C CNN
-F 3 "" H 9750 2200 50  0001 C CNN
-	1    9750 2200
+P 9750 2100
+F 0 "#PWR0105" H 9750 1950 50  0001 C CNN
+F 1 "+5V" V 9765 2228 50  0000 L CNN
+F 2 "" H 9750 2100 50  0001 C CNN
+F 3 "" H 9750 2100 50  0001 C CNN
+	1    9750 2100
 	0    -1   -1   0   
-$EndComp
-$Comp
-L hoshina_library:microB_usb_connector U5
-U 1 1 5D761264
-P 9750 2400
-F 0 "U5" H 10128 2501 50  0000 L CNN
-F 1 "microB_usb_connector" H 10128 2410 50  0000 L CNN
-F 2 "hoshina_library:USB_Micro-B_MC5F-03_aitendo_reverse" H 9750 2150 50  0001 C CNN
-F 3 "" H 9750 2150 50  0001 C CNN
-	1    9750 2400
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4200 2550 4200 2150
@@ -1877,35 +1648,24 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0112
 U 1 1 5D78317B
-P 9750 1250
-F 0 "#PWR0112" H 9750 1000 50  0001 C CNN
-F 1 "GND" H 9755 1077 50  0000 C CNN
-F 2 "" H 9750 1250 50  0001 C CNN
-F 3 "" H 9750 1250 50  0001 C CNN
-	1    9750 1250
-	0    1    1    0   
+P 10050 1450
+F 0 "#PWR0112" H 10050 1200 50  0001 C CNN
+F 1 "GND" H 10055 1277 50  0000 C CNN
+F 2 "" H 10050 1450 50  0001 C CNN
+F 3 "" H 10050 1450 50  0001 C CNN
+	1    10050 1450
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0113
 U 1 1 5D783185
-P 9750 950
-F 0 "#PWR0113" H 9750 800 50  0001 C CNN
-F 1 "+5V" V 9765 1078 50  0000 L CNN
-F 2 "" H 9750 950 50  0001 C CNN
-F 3 "" H 9750 950 50  0001 C CNN
-	1    9750 950 
+P 9750 850
+F 0 "#PWR0113" H 9750 700 50  0001 C CNN
+F 1 "+5V" V 9765 978 50  0000 L CNN
+F 2 "" H 9750 850 50  0001 C CNN
+F 3 "" H 9750 850 50  0001 C CNN
+	1    9750 850 
 	0    -1   -1   0   
-$EndComp
-$Comp
-L hoshina_library:microB_usb_connector U3
-U 1 1 5D78318F
-P 9750 1150
-F 0 "U3" H 10128 1251 50  0000 L CNN
-F 1 "microB_usb_connector" H 10128 1160 50  0000 L CNN
-F 2 "hoshina_library:USB_Micro-B_MC5F-03_aitendo_reverse" H 9750 900 50  0001 C CNN
-F 3 "" H 9750 900 50  0001 C CNN
-	1    9750 1150
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:USB_A J2
@@ -1943,28 +1703,13 @@ $EndComp
 Wire Wire Line
 	7800 1450 7700 1450
 Connection ~ 7700 1450
-Wire Wire Line
-	8100 1150 9750 1150
-Wire Wire Line
-	8100 1050 9750 1050
-$Comp
-L hoshina_library:Arduino_Leonardo_pin_remove_2pin A1
-U 1 1 5D7D4A23
-P -2750 2050
-F 0 "A1" H -2763 3231 50  0000 C CNN
-F 1 "Arduino_Leonardo_pin_remove_2pin" H -2763 3140 50  0000 C CNN
-F 2 "hoshina_library:arduino_leonard_remove_2pin" H -2600 1000 50  0001 L CNN
-F 3 "https://www.arduino.cc/en/Main/ArduinoBoardLeonardo" H -2950 3100 50  0001 C CNN
-	1    -2750 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L dobot_circuite-cache:hoshina_library_terminal_block_2pin_small hand_electric_line1
 U 1 1 5D83222B
 P -2900 5200
 F 0 "hand_electric_line1" H -2672 5401 50  0000 L CNN
 F 1 "hoshina_library_terminal_block_2pin_small" H -2672 5310 50  0000 L CNN
-F 2 "hoshina_library:2pin_power_gnd" H -2850 4950 50  0001 C CNN
+F 2 "hoshina_library:XH2_pin" H -2850 4950 50  0001 C CNN
 F 3 "" H -2850 4950 50  0001 C CNN
 	1    -2900 5200
 	1    0    0    -1  
@@ -2039,7 +1784,7 @@ L Device:R R2
 U 1 1 5D901AB0
 P -6400 1600
 F 0 "R2" V -6607 1600 50  0000 C CNN
-F 1 "5.6k/1w" V -6516 1600 50  0000 C CNN
+F 1 "4.7k/1w" V -6516 1600 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V -6470 1600 50  0001 C CNN
 F 3 "~" H -6400 1600 50  0001 C CNN
 	1    -6400 1600
@@ -2052,7 +1797,7 @@ L Device:R R23
 U 1 1 5D98EDDD
 P -6400 2000
 F 0 "R23" V -6607 2000 50  0000 C CNN
-F 1 "5.6k/1w" V -6516 2000 50  0000 C CNN
+F 1 "4.7k/1w" V -6516 2000 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V -6470 2000 50  0001 C CNN
 F 3 "~" H -6400 2000 50  0001 C CNN
 	1    -6400 2000
@@ -2063,7 +1808,7 @@ L Device:R R24
 U 1 1 5D997CFC
 P -6400 2400
 F 0 "R24" V -6607 2400 50  0000 C CNN
-F 1 "5.6k/1w" V -6516 2400 50  0000 C CNN
+F 1 "4.7k/1w" V -6516 2400 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V -6470 2400 50  0001 C CNN
 F 3 "~" H -6400 2400 50  0001 C CNN
 	1    -6400 2400
@@ -2104,7 +1849,7 @@ L Device:R R29
 U 1 1 5DA27D20
 P 1200 -2550
 F 0 "R29" V 993 -2550 50  0000 C CNN
-F 1 "5.6k/1w" V 1084 -2550 50  0000 C CNN
+F 1 "4.7k/1w" V 1084 -2550 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V 1130 -2550 50  0001 C CNN
 F 3 "~" H 1200 -2550 50  0001 C CNN
 	1    1200 -2550
@@ -2117,7 +1862,7 @@ L Device:R R30
 U 1 1 5DA386D1
 P 1200 -2100
 F 0 "R30" V 993 -2100 50  0000 C CNN
-F 1 "5.6k/1w" V 1084 -2100 50  0000 C CNN
+F 1 "4.7k/1w" V 1084 -2100 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V 1130 -2100 50  0001 C CNN
 F 3 "~" H 1200 -2100 50  0001 C CNN
 	1    1200 -2100
@@ -2130,7 +1875,7 @@ L Device:R R31
 U 1 1 5DA40893
 P 1200 -1650
 F 0 "R31" V 993 -1650 50  0000 C CNN
-F 1 "5.6k/1w" V 1084 -1650 50  0000 C CNN
+F 1 "4.7k/1w" V 1084 -1650 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V 1130 -1650 50  0001 C CNN
 F 3 "~" H 1200 -1650 50  0001 C CNN
 	1    1200 -1650
@@ -2143,31 +1888,31 @@ L Device:R R32
 U 1 1 5DA6BE92
 P 1200 -1200
 F 0 "R32" V 993 -1200 50  0000 C CNN
-F 1 "5.6k/1w" V 1084 -1200 50  0000 C CNN
+F 1 "4.7k/1w" V 1084 -1200 50  0000 C CNN
 F 2 "hoshina_library:carbon_register" V 1130 -1200 50  0001 C CNN
 F 3 "~" H 1200 -1200 50  0001 C CNN
 	1    1200 -1200
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	-4800 -2500 -4450 -2500
+	-4100 -3700 -3750 -3700
 $Comp
 L Device:R R25
 U 1 1 5DA6BEB2
-P -4950 -2500
-F 0 "R25" V -5157 -2500 50  0000 C CNN
-F 1 "4.7k" V -5066 -2500 50  0000 C CNN
-F 2 "hoshina_library:register_0603" V -5020 -2500 50  0001 C CNN
-F 3 "~" H -4950 -2500 50  0001 C CNN
-	1    -4950 -2500
+P -4250 -3700
+F 0 "R25" V -4457 -3700 50  0000 C CNN
+F 1 "4.7k/0.06W" V -4366 -3700 50  0000 C CNN
+F 2 "hoshina_library:register_0603" V -4320 -3700 50  0001 C CNN
+F 3 "~" H -4250 -3700 50  0001 C CNN
+	1    -4250 -3700
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	-4800 -2050 -4450 -2050
+	-4100 -3000 -3750 -3000
 Wire Wire Line
-	-4800 -1600 -4450 -1600
+	-4100 -2250 -3750 -2250
 Wire Wire Line
-	-4800 -1150 -4450 -1150
+	-4100 -1350 -3750 -1350
 Text GLabel 750  -1200 0    50   Input ~ 0
 D10_24V
 Text GLabel 750  -1650 0    50   Input ~ 0
@@ -2264,133 +2009,133 @@ F 3 "" H -7500 -1950 50  0001 C CNN
 	1    -7500 -1950
 	1    0    0    -1  
 $EndComp
-Text GLabel -5400 -2500 0    50   Input ~ 0
+Text GLabel -4700 -3700 0    50   Input ~ 0
 D4
-Text GLabel -5400 -2050 0    50   Input ~ 0
+Text GLabel -4700 -3000 0    50   Input ~ 0
 D3
-Text GLabel -5400 -1600 0    50   Input ~ 0
+Text GLabel -4700 -2250 0    50   Input ~ 0
 D5
-Text GLabel -5400 -1150 0    50   Input ~ 0
+Text GLabel -4700 -1350 0    50   Input ~ 0
 D6
 $Comp
 L power:GND #PWR0180
 U 1 1 5DB8A898
-P -4450 -2500
-F 0 "#PWR0180" H -4450 -2750 50  0001 C CNN
-F 1 "GND" V -4445 -2628 50  0000 R CNN
-F 2 "" H -4450 -2500 50  0001 C CNN
-F 3 "" H -4450 -2500 50  0001 C CNN
-	1    -4450 -2500
+P -3750 -3700
+F 0 "#PWR0180" H -3750 -3950 50  0001 C CNN
+F 1 "GND" V -3745 -3828 50  0000 R CNN
+F 2 "" H -3750 -3700 50  0001 C CNN
+F 3 "" H -3750 -3700 50  0001 C CNN
+	1    -3750 -3700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0181
 U 1 1 5DB8A8A2
-P -4450 -2050
-F 0 "#PWR0181" H -4450 -2300 50  0001 C CNN
-F 1 "GND" V -4445 -2178 50  0000 R CNN
-F 2 "" H -4450 -2050 50  0001 C CNN
-F 3 "" H -4450 -2050 50  0001 C CNN
-	1    -4450 -2050
+P -3750 -3000
+F 0 "#PWR0181" H -3750 -3250 50  0001 C CNN
+F 1 "GND" V -3745 -3128 50  0000 R CNN
+F 2 "" H -3750 -3000 50  0001 C CNN
+F 3 "" H -3750 -3000 50  0001 C CNN
+	1    -3750 -3000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0182
 U 1 1 5DB8A8AC
-P -4450 -1600
-F 0 "#PWR0182" H -4450 -1850 50  0001 C CNN
-F 1 "GND" V -4445 -1728 50  0000 R CNN
-F 2 "" H -4450 -1600 50  0001 C CNN
-F 3 "" H -4450 -1600 50  0001 C CNN
-	1    -4450 -1600
+P -3750 -2250
+F 0 "#PWR0182" H -3750 -2500 50  0001 C CNN
+F 1 "GND" V -3745 -2378 50  0000 R CNN
+F 2 "" H -3750 -2250 50  0001 C CNN
+F 3 "" H -3750 -2250 50  0001 C CNN
+	1    -3750 -2250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0183
 U 1 1 5DB8A8B6
-P -4450 -1150
-F 0 "#PWR0183" H -4450 -1400 50  0001 C CNN
-F 1 "GND" V -4445 -1278 50  0000 R CNN
-F 2 "" H -4450 -1150 50  0001 C CNN
-F 3 "" H -4450 -1150 50  0001 C CNN
-	1    -4450 -1150
+P -3750 -1350
+F 0 "#PWR0183" H -3750 -1600 50  0001 C CNN
+F 1 "GND" V -3745 -1478 50  0000 R CNN
+F 2 "" H -3750 -1350 50  0001 C CNN
+F 3 "" H -3750 -1350 50  0001 C CNN
+	1    -3750 -1350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R26
 U 1 1 5DBAFFC5
-P -4950 -2050
-F 0 "R26" V -5157 -2050 50  0000 C CNN
-F 1 "4.7k" V -5066 -2050 50  0000 C CNN
-F 2 "hoshina_library:register_0603" V -5020 -2050 50  0001 C CNN
-F 3 "~" H -4950 -2050 50  0001 C CNN
-	1    -4950 -2050
+P -4250 -3000
+F 0 "R26" V -4457 -3000 50  0000 C CNN
+F 1 "4.7k/0.06W" V -4366 -3000 50  0000 C CNN
+F 2 "hoshina_library:register_0603" V -4320 -3000 50  0001 C CNN
+F 3 "~" H -4250 -3000 50  0001 C CNN
+	1    -4250 -3000
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R R27
 U 1 1 5DBB0285
-P -4950 -1600
-F 0 "R27" V -5157 -1600 50  0000 C CNN
-F 1 "4.7k" V -5066 -1600 50  0000 C CNN
-F 2 "hoshina_library:register_0603" V -5020 -1600 50  0001 C CNN
-F 3 "~" H -4950 -1600 50  0001 C CNN
-	1    -4950 -1600
+P -4250 -2250
+F 0 "R27" V -4457 -2250 50  0000 C CNN
+F 1 "4.7k/0.06W" V -4366 -2250 50  0000 C CNN
+F 2 "hoshina_library:register_0603" V -4320 -2250 50  0001 C CNN
+F 3 "~" H -4250 -2250 50  0001 C CNN
+	1    -4250 -2250
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R R28
 U 1 1 5DBB058F
-P -4950 -1150
-F 0 "R28" V -5157 -1150 50  0000 C CNN
-F 1 "4.7k" V -5066 -1150 50  0000 C CNN
-F 2 "hoshina_library:register_0603" V -5020 -1150 50  0001 C CNN
-F 3 "~" H -4950 -1150 50  0001 C CNN
-	1    -4950 -1150
+P -4250 -1350
+F 0 "R28" V -4457 -1350 50  0000 C CNN
+F 1 "4.7k/0.06W" V -4366 -1350 50  0000 C CNN
+F 2 "hoshina_library:register_0603" V -4320 -1350 50  0001 C CNN
+F 3 "~" H -4250 -1350 50  0001 C CNN
+	1    -4250 -1350
 	0    -1   1    0   
 $EndComp
 $Comp
 L hoshina_library:LED led4
 U 1 1 5DC68121
-P -5250 -2500
-F 0 "led4" H -5257 -2755 50  0000 C CNN
-F 1 "LED" H -5257 -2664 50  0000 C CNN
-F 2 "hoshina_library:LED_1608" H -5250 -2500 50  0001 C CNN
-F 3 "~" H -5250 -2500 50  0001 C CNN
-	1    -5250 -2500
+P -4550 -3700
+F 0 "led4" H -4557 -3955 50  0000 C CNN
+F 1 "LED" H -4557 -3864 50  0000 C CNN
+F 2 "hoshina_library:LED_1608" H -4550 -3700 50  0001 C CNN
+F 3 "~" H -4550 -3700 50  0001 C CNN
+	1    -4550 -3700
 	-1   0    0    1   
 $EndComp
 $Comp
 L hoshina_library:LED led5
 U 1 1 5DC699CA
-P -5250 -2050
-F 0 "led5" H -5257 -2305 50  0000 C CNN
-F 1 "LED" H -5257 -2214 50  0000 C CNN
-F 2 "hoshina_library:LED_1608" H -5250 -2050 50  0001 C CNN
-F 3 "~" H -5250 -2050 50  0001 C CNN
-	1    -5250 -2050
+P -4550 -3000
+F 0 "led5" H -4557 -3255 50  0000 C CNN
+F 1 "LED" H -4557 -3164 50  0000 C CNN
+F 2 "hoshina_library:LED_1608" H -4550 -3000 50  0001 C CNN
+F 3 "~" H -4550 -3000 50  0001 C CNN
+	1    -4550 -3000
 	-1   0    0    1   
 $EndComp
 $Comp
 L hoshina_library:LED led6
 U 1 1 5DC69CB3
-P -5250 -1600
-F 0 "led6" H -5257 -1855 50  0000 C CNN
-F 1 "LED" H -5257 -1764 50  0000 C CNN
-F 2 "hoshina_library:LED_1608" H -5250 -1600 50  0001 C CNN
-F 3 "~" H -5250 -1600 50  0001 C CNN
-	1    -5250 -1600
+P -4550 -2250
+F 0 "led6" H -4557 -2505 50  0000 C CNN
+F 1 "LED" H -4557 -2414 50  0000 C CNN
+F 2 "hoshina_library:LED_1608" H -4550 -2250 50  0001 C CNN
+F 3 "~" H -4550 -2250 50  0001 C CNN
+	1    -4550 -2250
 	-1   0    0    1   
 $EndComp
 $Comp
 L hoshina_library:LED led7
 U 1 1 5DC6AAB5
-P -5250 -1150
-F 0 "led7" H -5257 -1405 50  0000 C CNN
-F 1 "LED" H -5257 -1314 50  0000 C CNN
-F 2 "hoshina_library:LED_1608" H -5250 -1150 50  0001 C CNN
-F 3 "~" H -5250 -1150 50  0001 C CNN
-	1    -5250 -1150
+P -4550 -1350
+F 0 "led7" H -4557 -1605 50  0000 C CNN
+F 1 "LED" H -4557 -1514 50  0000 C CNN
+F 2 "hoshina_library:LED_1608" H -4550 -1350 50  0001 C CNN
+F 3 "~" H -4550 -1350 50  0001 C CNN
+	1    -4550 -1350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2470,4 +2215,619 @@ F 3 "~" H -6100 2000 50  0001 C CNN
 	1    -6100 2000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	-8950 2950 -9000 2950
+Wire Wire Line
+	-8950 4700 -9000 4700
+Wire Wire Line
+	-8950 5100 -9000 5100
+Wire Wire Line
+	-9000 5100 -9000 4700
+Connection ~ -9000 4700
+Wire Wire Line
+	-9000 4700 -9050 4700
+Connection ~ -9000 2950
+Wire Wire Line
+	-9000 2950 -9050 2950
+Wire Wire Line
+	-8650 5100 -8650 4700
+Wire Wire Line
+	-4400 -3400 -4400 -3700
+Connection ~ -4400 -3700
+Wire Wire Line
+	-4100 -3400 -4100 -3700
+Connection ~ -4100 -3700
+Wire Wire Line
+	-4100 -2700 -4100 -3000
+Connection ~ -4100 -3000
+Wire Wire Line
+	-4400 -2700 -4400 -3000
+Connection ~ -4400 -3000
+Wire Wire Line
+	-4400 -1950 -4400 -2250
+Connection ~ -4400 -2250
+Wire Wire Line
+	-4100 -1950 -4100 -2250
+Connection ~ -4100 -2250
+Wire Wire Line
+	-4100 -1000 -4100 -1350
+Connection ~ -4100 -1350
+Wire Wire Line
+	-4400 -1000 -4400 -1350
+Connection ~ -4400 -1350
+Wire Wire Line
+	6200 5900 6200 5250
+Connection ~ 6200 5900
+Connection ~ 6200 6200
+Wire Wire Line
+	6200 5900 6600 5900
+Wire Wire Line
+	6200 6200 6600 6200
+Wire Wire Line
+	-2550 -3100 -2550 -3200
+Wire Wire Line
+	-2550 -3100 -2800 -3100
+Connection ~ -2550 -3100
+Wire Wire Line
+	-2800 -2800 -2550 -2800
+Wire Wire Line
+	-2550 -2800 -2550 -2700
+Connection ~ -2550 -2800
+Text GLabel -2550 -1300 3    50   Input ~ 0
+D9
+Text GLabel -1100 -1300 3    50   Input ~ 0
+D10
+Text GLabel -1100 -2700 3    50   Input ~ 0
+D8
+$Comp
+L Device:R R43
+U 1 1 5E1CC313
+P -1100 -2950
+F 0 "R43" H -1030 -2904 50  0000 L CNN
+F 1 "200/0.06W_chip" H -1030 -2995 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -1170 -2950 50  0001 C CNN
+F 3 "~" H -1100 -2950 50  0001 C CNN
+	1    -1100 -2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1100 -3100 -1100 -3200
+Wire Wire Line
+	-1100 -3100 -1350 -3100
+Connection ~ -1100 -3100
+Wire Wire Line
+	-1350 -2800 -1100 -2800
+Wire Wire Line
+	-1100 -2800 -1100 -2700
+Connection ~ -1100 -2800
+$Comp
+L Device:R R44
+U 1 1 5E1D7EF4
+P -1100 -1550
+F 0 "R44" H -1030 -1504 50  0000 L CNN
+F 1 "200/0.06W_chip" H -1030 -1595 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -1170 -1550 50  0001 C CNN
+F 3 "~" H -1100 -1550 50  0001 C CNN
+	1    -1100 -1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1100 -1700 -1100 -1800
+Wire Wire Line
+	-1100 -1700 -1350 -1700
+Connection ~ -1100 -1700
+Wire Wire Line
+	-1350 -1400 -1100 -1400
+Wire Wire Line
+	-1100 -1400 -1100 -1300
+Connection ~ -1100 -1400
+$Comp
+L Device:R R20
+U 1 1 5E1E411F
+P -2550 -1550
+F 0 "R20" H -2480 -1504 50  0000 L CNN
+F 1 "200/0.06W_chip" H -2480 -1595 50  0000 L CNN
+F 2 "hoshina_library:register_0603" V -2620 -1550 50  0001 C CNN
+F 3 "~" H -2550 -1550 50  0001 C CNN
+	1    -2550 -1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2550 -1700 -2550 -1800
+Wire Wire Line
+	-2550 -1700 -2800 -1700
+Connection ~ -2550 -1700
+Wire Wire Line
+	-2800 -1400 -2550 -1400
+Wire Wire Line
+	-2550 -1400 -2550 -1300
+Connection ~ -2550 -1400
+Wire Wire Line
+	-8600 -3350 -8600 -3650
+Connection ~ -8600 -3350
+Wire Wire Line
+	-7150 -3650 -7150 -3350
+Connection ~ -7150 -3350
+Wire Wire Line
+	-7150 -3650 -6500 -3650
+Wire Wire Line
+	-6500 -3950 -7150 -3950
+Connection ~ -7150 -3950
+Connection ~ -7150 -3650
+Wire Wire Line
+	-7150 -2250 -7150 -1950
+Connection ~ -7150 -1950
+Wire Wire Line
+	-8600 -1950 -8600 -2200
+Connection ~ -8600 -1950
+$Comp
+L hoshina_library:aray_register U4
+U 1 1 5E4F7AB9
+P 900 -3150
+F 0 "U4" H 1078 -3099 50  0000 L CNN
+F 1 "aray_register_10k(1/8W)" H 1078 -3190 50  0000 L CNN
+F 2 "hoshina_library:array_register" H 950 -3500 50  0001 C CNN
+F 3 "" H 950 -3500 50  0001 C CNN
+	1    900  -3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  -2950 800  -2950
+Text GLabel -2200 -3800 1    50   Input ~ 0
+r_1
+Text GLabel -750 -3800 1    50   Input ~ 0
+r_2
+Text GLabel -2200 -2350 1    50   Input ~ 0
+r_3
+Text GLabel -750 -2350 1    50   Input ~ 0
+r_4
+Text GLabel 700  -3350 0    50   Input ~ 0
+r_1
+Text GLabel 700  -3250 0    50   Input ~ 0
+r_2
+Text GLabel 700  -3150 0    50   Input ~ 0
+r_3
+Text GLabel 700  -3050 0    50   Input ~ 0
+r_4
+Wire Wire Line
+	-2200 -3800 -2200 -3550
+Connection ~ -2200 -3550
+Wire Wire Line
+	-750 -3800 -750 -3550
+Connection ~ -750 -3550
+Wire Wire Line
+	-2200 -2350 -2200 -2150
+Connection ~ -2200 -2150
+Wire Wire Line
+	-750 -2350 -750 -2150
+Connection ~ -750 -2150
+Wire Wire Line
+	700  -3350 800  -3350
+Wire Wire Line
+	700  -3250 800  -3250
+Wire Wire Line
+	800  -3150 700  -3150
+Wire Wire Line
+	700  -3050 800  -3050
+Wire Wire Line
+	-9000 3300 -9000 2950
+Wire Wire Line
+	-8950 3300 -9000 3300
+Wire Wire Line
+	-8650 3300 -8650 2950
+Wire Wire Line
+	-8650 1450 -8650 1100
+Wire Wire Line
+	-8950 1450 -9000 1450
+Wire Wire Line
+	-8950 1100 -9000 1100
+Wire Wire Line
+	-9000 1100 -9050 1100
+Connection ~ -9000 1100
+Wire Wire Line
+	-9000 1450 -9000 1100
+$Comp
+L Device:R R17
+U 1 1 5D84537C
+P -6500 -3800
+F 0 "R17" H -6430 -3754 50  0000 L CNN
+F 1 "R" H -6430 -3845 50  0000 L CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -6570 -3800 50  0001 C CNN
+F 3 "~" H -6500 -3800 50  0001 C CNN
+	1    -6500 -3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5D87DE0A
+P -4250 -3400
+F 0 "R19" V -4457 -3400 50  0000 C CNN
+F 1 "R" V -4366 -3400 50  0000 C CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -4320 -3400 50  0001 C CNN
+F 3 "~" H -4250 -3400 50  0001 C CNN
+	1    -4250 -3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5D87E2A5
+P -4250 -2700
+F 0 "R21" V -4457 -2700 50  0000 C CNN
+F 1 "R" V -4366 -2700 50  0000 C CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -4320 -2700 50  0001 C CNN
+F 3 "~" H -4250 -2700 50  0001 C CNN
+	1    -4250 -2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5D87E648
+P -4250 -1950
+F 0 "R33" V -4457 -1950 50  0000 C CNN
+F 1 "R" V -4366 -1950 50  0000 C CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -4320 -1950 50  0001 C CNN
+F 3 "~" H -4250 -1950 50  0001 C CNN
+	1    -4250 -1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 5D87E952
+P -4250 -1000
+F 0 "R34" V -4457 -1000 50  0000 C CNN
+F 1 "R" V -4366 -1000 50  0000 C CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -4320 -1000 50  0001 C CNN
+F 3 "~" H -4250 -1000 50  0001 C CNN
+	1    -4250 -1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5D87EC8B
+P -2800 -1550
+F 0 "R36" H -2870 -1596 50  0000 R CNN
+F 1 "R" H -2870 -1505 50  0000 R CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -2870 -1550 50  0001 C CNN
+F 3 "~" H -2800 -1550 50  0001 C CNN
+	1    -2800 -1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 5D87F0C5
+P -2800 -2950
+F 0 "R35" H -2870 -2996 50  0000 R CNN
+F 1 "R" H -2870 -2905 50  0000 R CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -2870 -2950 50  0001 C CNN
+F 3 "~" H -2800 -2950 50  0001 C CNN
+	1    -2800 -2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5D87F2D1
+P -1350 -2950
+F 0 "R37" H -1420 -2996 50  0000 R CNN
+F 1 "R" H -1420 -2905 50  0000 R CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -1420 -2950 50  0001 C CNN
+F 3 "~" H -1350 -2950 50  0001 C CNN
+	1    -1350 -2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5D87F5D8
+P -1350 -1550
+F 0 "R38" H -1420 -1596 50  0000 R CNN
+F 1 "R" H -1420 -1505 50  0000 R CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -1420 -1550 50  0001 C CNN
+F 3 "~" H -1350 -1550 50  0001 C CNN
+	1    -1350 -1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 5D8A6A88
+P -8800 1450
+F 0 "R39" V -9007 1450 50  0000 C CNN
+F 1 "R" V -8916 1450 50  0000 C CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -8870 1450 50  0001 C CNN
+F 3 "~" H -8800 1450 50  0001 C CNN
+	1    -8800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5D8A74E5
+P -8800 3300
+F 0 "R40" V -9007 3300 50  0000 C CNN
+F 1 "R" V -8916 3300 50  0000 C CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -8870 3300 50  0001 C CNN
+F 3 "~" H -8800 3300 50  0001 C CNN
+	1    -8800 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5D8A79FF
+P -8800 5100
+F 0 "R41" V -9007 5100 50  0000 C CNN
+F 1 "R" V -8916 5100 50  0000 C CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -8870 5100 50  0001 C CNN
+F 3 "~" H -8800 5100 50  0001 C CNN
+	1    -8800 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 5D8A7C59
+P 6600 6050
+F 0 "R42" H 6530 6004 50  0000 R CNN
+F 1 "R" H 6530 6095 50  0000 R CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V 6530 6050 50  0001 C CNN
+F 3 "~" H 6600 6050 50  0001 C CNN
+	1    6600 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L hoshina_library:Arduino_Leonardo_pin_remove_4pin A1
+U 1 1 5D8EBD91
+P -2750 2050
+F 0 "A1" H -2763 3231 50  0000 C CNN
+F 1 "Arduino_Leonardo_pin_remove_4pin" H -2763 3140 50  0000 C CNN
+F 2 "hoshina_library:arduino_leonard_remove_4pin" H -2600 1000 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/ArduinoBoardLeonardo" H -2950 3100 50  0001 C CNN
+	1    -2750 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ -8600 -3950
+Connection ~ -8600 -3650
+$Comp
+L Device:R R6
+U 1 1 5D8457C6
+P -7950 -3800
+F 0 "R6" H -7880 -3754 50  0000 L CNN
+F 1 "R" H -7880 -3845 50  0000 L CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -8020 -3800 50  0001 C CNN
+F 3 "~" H -7950 -3800 50  0001 C CNN
+	1    -7950 -3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-7950 -3950 -8600 -3950
+Wire Wire Line
+	-8600 -3650 -7950 -3650
+$Comp
+L Device:R R18
+U 1 1 5D845F20
+P -6500 -2400
+F 0 "R18" H -6430 -2354 50  0000 L CNN
+F 1 "R" H -6430 -2445 50  0000 L CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -6570 -2400 50  0001 C CNN
+F 3 "~" H -6500 -2400 50  0001 C CNN
+	1    -6500 -2400
+	1    0    0    -1  
+$EndComp
+Connection ~ -7150 -2550
+Wire Wire Line
+	-6500 -2550 -7150 -2550
+Connection ~ -7150 -2250
+Wire Wire Line
+	-7150 -2250 -6500 -2250
+$Comp
+L Device:R R7
+U 1 1 5D845A93
+P -7950 -2350
+F 0 "R7" H -7880 -2304 50  0000 L CNN
+F 1 "R" H -7880 -2395 50  0000 L CNN
+F 2 "hoshina_library:carbon_register_1_6W_" V -8020 -2350 50  0001 C CNN
+F 3 "~" H -7950 -2350 50  0001 C CNN
+	1    -7950 -2350
+	1    0    0    -1  
+$EndComp
+Connection ~ -8600 -2500
+Wire Wire Line
+	-7950 -2500 -8600 -2500
+Connection ~ -8600 -2200
+Wire Wire Line
+	-8600 -2200 -7950 -2200
+$Comp
+L Connector:USB_B_Micro J10
+U 1 1 5D75D032
+P 10050 1050
+F 0 "J10" H 9820 947 50  0000 R CNN
+F 1 "USB_B_Micro" H 9820 1038 50  0000 R CNN
+F 2 "hoshina_library:USB_Micro-B_Molex_47346-0001" H 10200 1000 50  0001 C CNN
+F 3 "~" H 10200 1000 50  0001 C CNN
+	1    10050 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1150 9750 1150
+Wire Wire Line
+	8100 1050 9750 1050
+Wire Wire Line
+	1100 2900 2250 2900
+Wire Wire Line
+	2250 2800 1100 2800
+Wire Wire Line
+	1100 2600 2250 2600
+Wire Wire Line
+	1700 3650 2850 3650
+Wire Wire Line
+	1700 3300 1700 3650
+Wire Wire Line
+	1600 3600 2750 3600
+Wire Wire Line
+	1600 3300 1600 3600
+Wire Wire Line
+	2650 3550 2650 3300
+Wire Wire Line
+	1500 3550 2650 3550
+Wire Wire Line
+	1500 3300 1500 3550
+Wire Wire Line
+	2550 3500 2550 3300
+Wire Wire Line
+	1400 3500 2550 3500
+Wire Wire Line
+	2450 3450 2450 3300
+Wire Wire Line
+	1300 3450 2450 3450
+$Comp
+L hoshina_library:YC324J-10KCT-ND RA1
+U 1 1 5D823284
+P 2450 -2950
+F 0 "RA1" H 2400 -2325 50  0000 C CNN
+F 1 "YC324J-10KCT-ND" H 2400 -2416 50  0000 C CNN
+F 2 "hoshina_library:YC324J-10KCT-ND" H 2450 -3150 50  0001 C CNN
+F 3 "" H 2450 -3150 50  0001 C CNN
+	1    2450 -2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 -3350 0    50   Input ~ 0
+r_1
+Text GLabel 2250 -3250 0    50   Input ~ 0
+r_2
+Text GLabel 2250 -3150 0    50   Input ~ 0
+r_3
+Text GLabel 2250 -3050 0    50   Input ~ 0
+r_4
+$Comp
+L power:GNDA #PWR0146
+U 1 1 5D83393D
+P 2550 -3350
+F 0 "#PWR0146" H 2550 -3600 50  0001 C CNN
+F 1 "GNDA" H 2555 -3523 50  0000 C CNN
+F 2 "" H 2550 -3350 50  0001 C CNN
+F 3 "" H 2550 -3350 50  0001 C CNN
+	1    2550 -3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR0152
+U 1 1 5D8525FE
+P 2550 -3250
+F 0 "#PWR0152" H 2550 -3500 50  0001 C CNN
+F 1 "GNDA" H 2555 -3423 50  0000 C CNN
+F 2 "" H 2550 -3250 50  0001 C CNN
+F 3 "" H 2550 -3250 50  0001 C CNN
+	1    2550 -3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR0155
+U 1 1 5D852778
+P 2550 -3150
+F 0 "#PWR0155" H 2550 -3400 50  0001 C CNN
+F 1 "GNDA" H 2555 -3323 50  0000 C CNN
+F 2 "" H 2550 -3150 50  0001 C CNN
+F 3 "" H 2550 -3150 50  0001 C CNN
+	1    2550 -3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR0184
+U 1 1 5D8528C9
+P 2550 -3050
+F 0 "#PWR0184" H 2550 -3300 50  0001 C CNN
+F 1 "GNDA" H 2555 -3223 50  0000 C CNN
+F 2 "" H 2550 -3050 50  0001 C CNN
+F 3 "" H 2550 -3050 50  0001 C CNN
+	1    2550 -3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D874C35
+P 10050 2700
+F 0 "#PWR0101" H 10050 2450 50  0001 C CNN
+F 1 "GND" H 10055 2527 50  0000 C CNN
+F 2 "" H 10050 2700 50  0001 C CNN
+F 3 "" H 10050 2700 50  0001 C CNN
+	1    10050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 5D886BDA
+P 8800 5550
+F 0 "#PWR0185" H 8800 5300 50  0001 C CNN
+F 1 "GND" H 8805 5377 50  0000 C CNN
+F 2 "" H 8800 5550 50  0001 C CNN
+F 3 "" H 8800 5550 50  0001 C CNN
+	1    8800 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0186
+U 1 1 5D886BEE
+P 8800 5550
+F 0 "#PWR0186" H 8800 5300 50  0001 C CNN
+F 1 "GND" H 8805 5377 50  0000 C CNN
+F 2 "" H 8800 5550 50  0001 C CNN
+F 3 "" H 8800 5550 50  0001 C CNN
+	1    8800 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J13
+U 1 1 5D886BF8
+P 8800 5150
+F 0 "J13" H 8570 5047 50  0000 R CNN
+F 1 "USB_B_Micro" H 8570 5138 50  0000 R CNN
+F 2 "hoshina_library:USB_Micro-B_Molex_47346-0001" H 8950 5100 50  0001 C CNN
+F 3 "~" H 8950 5100 50  0001 C CNN
+	1    8800 5150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8800 5550
+Connection ~ 10050 2700
+$Comp
+L Connector:USB_B_Micro J11
+U 1 1 5D75E6AE
+P 10050 2300
+F 0 "J11" H 9820 2197 50  0000 R CNN
+F 1 "USB_B_Micro" H 9820 2288 50  0000 R CNN
+F 2 "hoshina_library:USB_Micro-B_Molex_47346-0001" H 10200 2250 50  0001 C CNN
+F 3 "~" H 10200 2250 50  0001 C CNN
+	1    10050 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L hoshina_library:S9013_trangister_elecrow T3
+U 1 1 5D9BD82C
+P -8500 4700
+F 0 "T3" H -8406 4746 50  0000 L CNN
+F 1 "S9013_trangister_elecrow" H -8406 4655 50  0000 L CNN
+F 2 "hoshina_library:S9013" H -8500 4950 50  0001 C CNN
+F 3 "" H -8500 4950 50  0001 C CNN
+	1    -8500 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ -8650 4700
+$Comp
+L hoshina_library:S9013_trangister_elecrow T2
+U 1 1 5D9BF021
+P -8500 2950
+F 0 "T2" H -8406 2996 50  0000 L CNN
+F 1 "S9013_trangister_elecrow" H -8406 2905 50  0000 L CNN
+F 2 "hoshina_library:S9013" H -8500 3200 50  0001 C CNN
+F 3 "" H -8500 3200 50  0001 C CNN
+	1    -8500 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ -8650 2950
+$Comp
+L hoshina_library:S9013_trangister_elecrow T1
+U 1 1 5D9BF48E
+P -8500 1100
+F 0 "T1" H -8406 1146 50  0000 L CNN
+F 1 "S9013_trangister_elecrow" H -8406 1055 50  0000 L CNN
+F 2 "hoshina_library:S9013" H -8500 1350 50  0001 C CNN
+F 3 "" H -8500 1350 50  0001 C CNN
+	1    -8500 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ -8650 1100
 $EndSCHEMATC
