@@ -36,39 +36,6 @@ F 3 "~" H 2500 3460 50  0001 C CNN
 	1    2450 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L hoshina_library:Hole_3.2mm H1
-U 1 1 5D70CDDF
-P 2650 2100
-F 0 "H1" H 2728 2146 50  0000 L CNN
-F 1 "Hole_3.2mm" H 2728 2055 50  0000 L CNN
-F 2 "hoshina_library:Hole_3.2mm" H 2650 1950 50  0001 C CNN
-F 3 "" H 2650 1950 50  0001 C CNN
-	1    2650 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L hoshina_library:Hole_3.2mm H2
-U 1 1 5D70D1CD
-P 2650 2300
-F 0 "H2" H 2728 2346 50  0000 L CNN
-F 1 "Hole_3.2mm" H 2728 2255 50  0000 L CNN
-F 2 "hoshina_library:Hole_3.2mm" H 2650 2150 50  0001 C CNN
-F 3 "" H 2650 2150 50  0001 C CNN
-	1    2650 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L hoshina_library:Hole_3.2mm H3
-U 1 1 5D70D3B8
-P 2650 2500
-F 0 "H3" H 2728 2546 50  0000 L CNN
-F 1 "Hole_3.2mm" H 2728 2455 50  0000 L CNN
-F 2 "hoshina_library:Hole_3.2mm" H 2650 2350 50  0001 C CNN
-F 3 "" H 2650 2350 50  0001 C CNN
-	1    2650 2500
-	1    0    0    -1  
-$EndComp
 Text GLabel 2750 3400 2    50   Input ~ 0
 5V
 Text GLabel 2750 3600 2    50   Input ~ 0
@@ -122,4 +89,37 @@ Wire Wire Line
 Wire Wire Line
 	5000 5900 5000 5800
 Connection ~ 4900 5900
+$Comp
+L hoshina_library:Hole_2.7mm H2
+U 1 1 5D70F57A
+P 2650 2700
+F 0 "H2" H 2728 2746 50  0000 L CNN
+F 1 "Hole_2.7mm" H 2728 2655 50  0000 L CNN
+F 2 "hoshina_library:Hole_2.7mm" H 2650 2550 50  0001 C CNN
+F 3 "" H 2650 2550 50  0001 C CNN
+	1    2650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L hoshina_library:Hole_2.7mm H3
+U 1 1 5D70F74E
+P 2650 2900
+F 0 "H3" H 2728 2946 50  0000 L CNN
+F 1 "Hole_2.7mm" H 2728 2855 50  0000 L CNN
+F 2 "hoshina_library:Hole_2.7mm" H 2650 2750 50  0001 C CNN
+F 3 "" H 2650 2750 50  0001 C CNN
+	1    2650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L hoshina_library:Hole_2.7mm H1
+U 1 1 5D70FA54
+P 2650 2500
+F 0 "H1" H 2728 2546 50  0000 L CNN
+F 1 "Hole_2.7mm" H 2728 2455 50  0000 L CNN
+F 2 "hoshina_library:Hole_2.7mm" H 2650 2350 50  0001 C CNN
+F 3 "" H 2650 2350 50  0001 C CNN
+	1    2650 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
